@@ -2,16 +2,16 @@
 
 namespace tests
 {
-    public class Class1
+    public class Calculator
     {
         #region variables
-        private static char ope;
-        private static double op1;
-        private static double op2;
-        private static double resultat;
+        private char ope;
+        private double op1;
+        private double op2;
+        private double resultat;
         #endregion variables
 
-        static void Main(string[] args)
+        void Main(string[] args)
         {
 
             Console.Write("Entrée le premier nombre : \n");
@@ -30,22 +30,22 @@ namespace tests
             Console.ReadLine();
         }
 
-        private static int addi(int re1, int re2)
+        public int addi(int re1, int re2)
         {
             return re1 + re2;
         }
 
-        private static int sous(int re1, int re2)
+        private int sous(int re1, int re2)
         {
             return re1 - re2;
         }
 
-        private static int mult(int re1, int re2)
+        private int mult(int re1, int re2)
         {
             return re1 * re2;
         }
 
-        private static double divi(int re1, int re2)
+        private double divi(int re1, int re2)
         {
 
             return re1 / re2;
